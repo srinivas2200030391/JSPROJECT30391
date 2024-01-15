@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <script>
+      //Arrays
+      document.writeln("<u>Demo On Arrays</u></br>");
+      const s = [34, 67, 89]; //Same Type of Elements
+      document.writeln(s + "</br>"); //34,67,89
+      document.writeln(typeof s + "</br>"); //object
+      document.writeln(s.length + "</br>"); //3
+      document.writeln(s[0] + "</br>"); //34
+      document.writeln(s[2] + "</br>"); //89
+      document.writeln(s[5] + "</br>"); //undefined
+      document.writeln(typeof s[0] + "</br>"); //number
+      s[1] = 50;
+      s[2] = "cse";
+      document.writeln(s + "</br>"); //34,50,cse
+      s.push("mswd");
+      s.push(100);
+      document.writeln(s + "</br>"); //34,50,cse,mswd,100
+      document.writeln(s.length + "</br>"); //5
+      s.pop(); //Remove last element
+      document.writeln(s + "</br>"); //34,50,cse,mswd
+      document.writeln(s.reverse() + "</br>"); //mswd,cse,50,34
+      document.writeln("Reversed Array = " + s + "</br>"); //mswd,cse,50,34
+      document.writeln("Sorted Array = " + s.sort() + "</br>"); //34,50,cse,mswd
+      let element = s.shift();
+      document.writeln(element + "</br>"); //34
+      document.writeln("After Shifting = " + s + "</br>"); //50,cse,mswd
+      let len = s.unshift(100.5);
+      document.writeln("Length after Unshifting = " + len + "</br>"); //4
+      document.writeln("Updated Array = " + s + "</br>"); //100.5,50,cse,mswd
+      let len1 = s.unshift("AWS", 31, "pfsd");
+      document.writeln("Length after Unshifting = " + len1 + "</br>"); //7
+      document.writeln("Updated Array = " + s + "</br>"); //AWS,31,pfsd,100.5,50,cse,mswd
+      document.writeln("<u>Displaying Array Elements using for loop</br></u>");
+      for (let i = 0; i < s.length; i++) document.writeln(s[i] + "</br>");
+      document.writeln(
+        "<u>Displaying Array Elements using for in loop</br></u>"
+      );
+      for (let i in s) document.writeln(s[i] + "</br>");
+      document.writeln(
+        "<u>Displaying Array Elements using for of loop</br></u>"
+      );
+      for (let i of s) document.writeln(i + "</br>");
+    </script>
+  </head>
+  <body></body>
+</html>

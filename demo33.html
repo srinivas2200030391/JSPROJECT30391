@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <script>
+      //String Operations
+      const txt = "SdpProject";
+      document.writeln(`Text = ${txt}</br>`);
+      document.writeln(`Length = ${txt.length}</br>`);
+      document.writeln(txt.concat(" Mswd") + "</br>");
+      document.writeln(txt.toUpperCase() + "</br>");
+      document.writeln(txt.toLowerCase() + "</br>");
+      document.writeln(txt.charAt(9) + "</br>");
+      document.writeln(txt[5] + "</br>");
+      document.writeln(`${txt[2]}, ${txt[6]}, ${txt[8]}</br>`);
+      document.writeln(txt.substring(3, 7) + "</br>"); //txt.substring(start, end-1)
+      document.writeln(
+        `<u>Displaying Characters in ${txt} Using For Loop </u></br>`
+      );
+      for (const ch of txt) {
+        document.writeln(ch + "</br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

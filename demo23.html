@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVACRIPT</title>
+    <script>
+      // Let vs Var vs Const
+      function demo1() {
+        document.writeln("Iam in Demo-1" + "</br>");
+        {
+          var a = 10;
+          document.writeln("Inside The Block</br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>");
+      }
+      //demo1(); //This is for var
+      function demo2() {
+        document.writeln("Iam in Demo-2" + "</br>");
+        {
+          let a = 10;
+          document.writeln("Inside The Block</br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>"); //a is not defined here and output will not be given
+      }
+      //demo2(); //This is for let
+      function demo3() {
+        document.writeln("Iam in Demo-3" + "</br>");
+        {
+          const a = 10;
+          // a=20 Reassignment is not possible
+          document.writeln("Inside The Block</br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>");
+      }
+      demo3(); //This is for const
+    </script>
+  </head>
+  <body></body>
+</html>

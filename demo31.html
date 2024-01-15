@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <script>
+      // template literal
+      // ` ` (back tick)
+      const name = "klef";
+      document.writeln(`<b>Hy ${name}</b></br>`);
+
+      //spread operator
+      const a = [10, 23, 45, 56];
+      const b = [...a, 30, 40];
+      document.writeln(`a = ${a}</br>b = ${b}</br>`);
+
+      document.writeln(b + "</br>");
+      const x = [12, 12, 45, 56];
+      const y = [56, 23, 90, 34];
+      const z = [...x, ...y];
+      document.writeln(`x = ${x}</br>y = ${y}</br>z = ${z}</br>`);
+      const v1 = "KlUniversity";
+      const v2 = [...v1];
+      document.writeln("V1 = " + v1 + "</br>");
+      document.writeln("V2 = " + v2 + "</br>");
+
+      //destructuring assignment
+
+      const names = [10, "MSWD", "SDP", 20];
+      document.writeln("Names = " + names + "</br>");
+      document.writeln("Length = " + names.length + "</br>");
+      const [i, j, k, l] = names;
+      document.writeln(i + "</br>");
+      document.writeln(j + "</br>");
+      document.writeln(k + "</br>");
+      document.writeln(l + "</br>");
+      const [p, q] = names;
+      document.writeln(p + "</br>");
+      document.writeln(q + "</br>");
+      const [m, , , n] = names;
+      document.writeln(m + "</br>");
+      document.writeln(n + "</br>");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <script>
+      //map object - key value pair
+      const demomap = new Map(); //new Map object
+      demomap.set("id", 101);
+      demomap.set("name", "mswd");
+      demomap.set("age", 34.5);
+      demomap.set("status", true);
+      demomap.set("name", "klef"); //duplicate key - mswd willl be changed to klef
+      document.writeln("Map Size: " + demomap.size + "</br>");
+      document.writeln("Type of Demo Map is: " + typeof demomap + "</br>");
+      document.writeln(demomap.get("id") + "</br>");
+      document.writeln(demomap.get("city") + "</br>"); //undefined
+      document.writeln(demomap.has("id") + "</br>");
+      document.writeln(demomap.has("city") + "</br>");
+      document.writeln("Deletion: " + demomap.delete("status") + "</br>");
+      document.writeln("Map Size: " + demomap.size + "</br>");
+      document.writeln("<u>Displaying Map Keys</u></br>");
+      for (const k of demomap.keys()) document.writeln(k + "</br>");
+      document.writeln("<u>Displaying Map Values</u></br>");
+      for (const k of demomap.values()) document.writeln(k + "</br>");
+      document.writeln("<u>Displaying Map Values Based on keys</u></br>");
+      for (const k of demomap.keys())
+        document.writeln(demomap.get(k) + "</br>");
+      document.writeln("<u>Displaying map keys and values</u></br>");
+      for (const [k, v] of demomap.entries())
+        document.writeln(k + " : " + v + "</br>");
+      demomap.clear();
+      document.writeln("Map Size: " + demomap.size + "</br>");
+    </script>
+  </head>
+
+  <body></body>
+</html>
